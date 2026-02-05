@@ -1,19 +1,16 @@
 using UnityEngine;
 
-public class SmoothAlign : MonoBehaviour
-{
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+public class SmoothAlign : MonoBehaviour{
+    
+    private Rigidbody rb;
+    private Transform t;
+
+    void Start(){
+        rb = GetComponent<Rigidbody>();
+        t = GetComponent<Transform>();
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        Rigidbody rb = GetComponent<Rigidbody>();
-        Transform t = GetComponent<Transform>();
-
+    void FixedUpdate(){
         float x_torque = -t.rotation.eulerAngles.x;
         float z_torque = -t.rotation.eulerAngles.z;
         if(x_torque < -180) x_torque += 360;
