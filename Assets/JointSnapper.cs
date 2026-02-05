@@ -30,7 +30,7 @@ public class JointSnapper : MonoBehaviour{
         }
     }
     void Update(){
-        if(dst is not null){
+        if(dst != null){
             t.position = dst.position;
         }else if(!grabInteractable.isSelected){
             t.position += (src.position-t.position)*retractSpeed*Time.deltaTime;

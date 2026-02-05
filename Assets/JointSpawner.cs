@@ -15,7 +15,6 @@ public class JointSpawner : MonoBehaviour{
             currentCollisions.Add(other);
             while(currentCollisions.Count >= 2)
             {
-                Debug.Log("destroyed");
                 Destroy(currentCollisions[0].transform.parent.gameObject);
                 currentCollisions.RemoveAt(0);
             }
@@ -26,7 +25,6 @@ public class JointSpawner : MonoBehaviour{
             currentCollisions.Remove(other);
             if(currentCollisions.Count == 0)
             {
-                Debug.Log("created");
                 Instantiate(destinationPrefab, t.position, t.rotation, t);
             }
         }
