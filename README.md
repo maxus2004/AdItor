@@ -27,6 +27,9 @@
 - Assets/Prefabs/ - префабы слоёв нейросетей и соединений
 - Assets/Scenes/MainScene.scene - основная сцена проекта
 - Assets/TextMesh Pro/ - файлы модуля TextMesh Pro, отвечающего за отрисовку текста интерфейс
+- Assets/Samples/ и Assets/VrTemplateAssets/ - файлы из VR примеров Unity
+- Assets/XR/ и Assets/XRI/ - файлы XR Interaction Toolkit
+- Assets/BlenderModels/ - 3D модели слоёв нейросети созданные в Blender
 
 ## MVP
 ### На данный момент реализовано использование следющих типов слоёв:
